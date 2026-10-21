@@ -185,7 +185,7 @@ export function ArticleView({
               datePublished: a.publishedAt,
               dateModified: a.updatedAt,
               author: { "@type": "Person", name: a.author },
-              publisher: { "@type": "Organization", name: "The Court Brief" },
+              publisher: { "@type": "Organization", name: "CourtroomDigest" },
               mainEntityOfPage: siteUrl(`/judgments/${a.slug}`),
               isAccessibleForFree: true,
             }),

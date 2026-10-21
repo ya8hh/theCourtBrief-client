@@ -1,11 +1,11 @@
-export const metadata = { title: "About The Court Brief" };
+export const metadata = { title: "About CourtroomDigest" };
 export default function Page() {
   return (
     <article className="wrap policy-page">
       <p className="kicker">THE COURT BRIEF</p>
-      <h1>About The Court Brief</h1>
+      <h1>About CourtroomDigest</h1>
       <p>
-        The Court Brief is an independent publication focused on Supreme Court
+        CourtroomDigest is an independent publication focused on Supreme Court
         of India judgments and orders. We aim to explain the Court’s decisions
         in clear English and help readers consult the original record.
       </p>

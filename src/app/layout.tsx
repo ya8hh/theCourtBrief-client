@@ -5,9 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {
-    default: "The Court Brief | Supreme Court of India, explained",
-    template: "%s | The Court Brief",
+    default: "CourtroomDigest | Supreme Court of India, explained",
+    template: "%s | CourtroomDigest",
   },
+  applicationName: "CourtroomDigest",
   description:
     "Independent reporting and clear explanations of Supreme Court of India judgments and orders.",
 };

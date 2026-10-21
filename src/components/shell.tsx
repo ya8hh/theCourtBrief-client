@@ -5,10 +5,10 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="masthead wrap">
-        <Link href="/" className="brand" aria-label="The Court Brief homepage">
+        <Link href="/" className="brand" aria-label="CourtroomDigest homepage">
           <Scale aria-hidden="true" size={31} />
           <span>
-            The Court Brief
+            CourtroomDigest
             <span className="brand-sub">
               SUPREME COURT OF INDIA · EXPLAINED
             </span>
@@ -42,7 +42,7 @@ export function Footer() {
       <div className="wrap footer-grid">
         <div>
           <Link className="footer-brand" href="/">
-            The Court Brief<span className="accent">.</span>
+            CourtroomDigest<span className="accent">.</span>
           </Link>
           <p>
             Supreme Court developments, clearly explained.
