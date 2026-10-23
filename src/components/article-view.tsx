@@ -112,6 +112,7 @@ export function ArticleView({
           <div className="source-links">
             <h2>Go to the source</h2>
             <a
+              data-court-source="official"
               href={a.officialSourceUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -121,6 +122,7 @@ export function ArticleView({
             {a.pdfUrl ? (
               <a
                 className="button"
+                data-court-source="pdf"
                 href={preview ? a.pdfUrl : a.officialSourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"

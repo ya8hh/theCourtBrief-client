@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Header, Footer } from "@/components/shell";
 import { siteUrl } from "@/lib/cms";
 import "./globals.css";
+import { Analytics } from "@/components/analytics";
+import { validMeasurementId } from "@/lib/analytics";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {
@@ -17,6 +19,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const analyticsId = process.env.NODE_ENV === "production" ? validMeasurementId(process.env.GA_MEASUREMENT_ID ?? "G-390ZEXVFWM") : null;
   return (
     <html lang="en">
       <body>
@@ -26,6 +29,7 @@ export default function RootLayout({
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        {analyticsId && <Analytics measurementId={analyticsId} />}
       </body>
     </html>
   );
